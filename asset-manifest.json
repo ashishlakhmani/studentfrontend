@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/studentfrontend/static/css/main.f855e6bc.css",
-    "main.js": "/studentfrontend/static/js/main.57eaea88.js",
-    "static/js/453.5444c1b9.chunk.js": "/studentfrontend/static/js/453.5444c1b9.chunk.js",
-    "index.html": "/studentfrontend/index.html",
-    "main.f855e6bc.css.map": "/studentfrontend/static/css/main.f855e6bc.css.map",
-    "main.57eaea88.js.map": "/studentfrontend/static/js/main.57eaea88.js.map",
-    "453.5444c1b9.chunk.js.map": "/studentfrontend/static/js/453.5444c1b9.chunk.js.map"
+    "main.css": "/studentfrontend/source/components/App.js/static/css/main.f855e6bc.css",
+    "main.js": "/studentfrontend/source/components/App.js/static/js/main.7d8c87f3.js",
+    "static/js/453.5444c1b9.chunk.js": "/studentfrontend/source/components/App.js/static/js/453.5444c1b9.chunk.js",
+    "index.html": "/studentfrontend/source/components/App.js/index.html",
+    "main.f855e6bc.css.map": "/studentfrontend/source/components/App.js/static/css/main.f855e6bc.css.map",
+    "main.7d8c87f3.js.map": "/studentfrontend/source/components/App.js/static/js/main.7d8c87f3.js.map",
+    "453.5444c1b9.chunk.js.map": "/studentfrontend/source/components/App.js/static/js/453.5444c1b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.57eaea88.js"
+    "static/js/main.7d8c87f3.js"
   ]
 }
