@@ -13,7 +13,7 @@ export default function Student() {
         e.preventDefault()
         const student = {name, address}
         console.log(student)
-        fetch("http://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com/student/add", {
+        fetch("https://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com/student/add", {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body:JSON.stringify(student)
@@ -23,7 +23,7 @@ export default function Student() {
     }
     
     React.useEffect(()=> {
-        fetch("http://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com/student/getAll")
+        fetch("https://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com/student/getAll")
         .then(res=>res.json())
         .then((result)=>{
             setStudents(result);
