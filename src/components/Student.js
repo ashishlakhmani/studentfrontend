@@ -13,7 +13,7 @@ export default function Student() {
         e.preventDefault()
         const student = {name, address}
         console.log(student)
-        fetch("spring.datasource.url= jdbc:mysql://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com:3306/fullstack/add", {
+        fetch("http://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com/student/add", {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body:JSON.stringify(student)
@@ -23,7 +23,7 @@ export default function Student() {
     }
     
     React.useEffect(()=> {
-        fetch("spring.datasource.url= jdbc:mysql://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com:3306/fullstack/getAll")
+        fetch("http://studentsystemdb.cpcou6c8cfro.us-east-1.rds.amazonaws.com/student/getAll")
         .then(res=>res.json())
         .then((result)=>{
             setStudents(result);
