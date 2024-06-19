@@ -13,7 +13,7 @@ export default function Student() {
         e.preventDefault()
         const student = {name, address}
         console.log(student)
-        fetch("https://studentsystem-env.eba-ipphve64.us-east-1.elasticbeanstalk.com/student/add", {
+        fetch("http://ec2-54-90-0-254.compute-1.amazonaws.com:8080/student/add", {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body:JSON.stringify(student)
@@ -23,7 +23,7 @@ export default function Student() {
     }
     
     React.useEffect(()=> {
-        fetch("https://studentsystem-env.eba-ipphve64.us-east-1.elasticbeanstalk.com/student/getAll")
+        fetch("http://ec2-54-90-0-254.compute-1.amazonaws.com:8080/student/getAll")
         .then(res=>res.json())
         .then((result)=>{
             setStudents(result);
